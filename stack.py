@@ -11,4 +11,11 @@ class Stack:
             return True
         else:
             return False
+    
+    def pop(self):
+        if self.is_empty():
+            raise IndexError
+        else:
+            return self.data.pop()
+
     pass
