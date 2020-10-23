@@ -18,4 +18,13 @@ class Stack:
         else:
             return self.data.pop()
 
+    def peek(self):
+        if self.is_empty():
+            raise IndexError
+        else:
+            return self.data[-1]
+
+    def push(self, value):
+        self.data.append(value)
+
     pass
